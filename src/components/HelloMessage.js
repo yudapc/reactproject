@@ -7,7 +7,7 @@ export default class HelloMessage extends React.Component {
 
     render() {
         return (
-            <h1>Hello {this.props.myname}</h1>
+            <h1 onClick={this.props.clickHandler}>Hello {this.props.myname}</h1>
         );
     }
 }

@@ -16,8 +16,8 @@ export default class MyApp extends React.Component {
 
   render() {
     return (
-        <header onClick={this.handleClick.bind(this)} style={{backgroundColor:this.state.color}}>
-          <HelloMessage myname="Sebastian!" />
+        <header style={{backgroundColor:this.state.color}}>
+          <HelloMessage clickHandler={this.handleClick.bind(this)} myname="Sebastian" />
         </header>
     );
   }
